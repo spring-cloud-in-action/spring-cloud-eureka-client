@@ -1,4 +1,4 @@
-package org.linker.productor;
+package org.linker.provider.controller;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -18,13 +18,12 @@ import java.util.List;
 public class DcController {
 
     @Autowired
-    DiscoveryClient discoveryClient;
+    private DiscoveryClient discoveryClient;
 
     @GetMapping("/dc")
-    @ApiOperation("生产者")
+    @ApiOperation("服务发现")
     public List<String> dc() {
         List<String> services = discoveryClient.getServices();
-        System.out.println("Services: " + services);
         return services;
     }
 }

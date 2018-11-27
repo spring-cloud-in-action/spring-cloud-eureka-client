@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: eureka-client
+server:
+  port: 1002
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://es.shruochu.com:10001/eureka/
+
+# API½Ó¿ÚµØÖ·£ºhttp://localhost:port/swagger-ui.html
+swagger:
+  base-package: org.linker
+  title: spring-cloud-eureka-client
+  version: 1.7.0.RELEASE
