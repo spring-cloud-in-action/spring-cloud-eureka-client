@@ -7,7 +7,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://es.shruochu.com:10001/eureka/
+      defaultZone: http://localhost:10001/eureka/
 
 # API½Ó¿ÚµØÖ·£ºhttp://localhost:port/swagger-ui.html
 swagger:
